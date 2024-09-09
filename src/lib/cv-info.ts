@@ -2,21 +2,20 @@ import {TbBrandNodejs, TbBrandReactNative} from "react-icons/tb";
 import {
     BiLogoCss3,
     BiLogoDocker,
+    BiLogoFirebase,
     BiLogoGit,
     BiLogoGithub,
     BiLogoJavascript,
     BiLogoLinkedin,
     BiLogoMongodb,
-    BiLogoReact,
     BiLogoRedux,
     BiLogoTailwindCss,
     BiLogoTelegram,
-    BiLogoTypescript,
-    BiLogoFirebase
+    BiLogoTypescript
 } from "react-icons/bi";
-import {SiAuth0, SiCpanel, SiMongoose, SiNetlify, SiNextdotjs, SiPostman, SiPytest, SiShadcnui} from "react-icons/si";
+import {SiCpanel, SiMongoose, SiNetlify, SiNextdotjs, SiShadcnui} from "react-icons/si";
 import {FaDatabase} from "react-icons/fa";
-import {AiOutlineDeploymentUnit, AiFillApi, AiFillBug, AiOutlineComment, } from "react-icons/ai";
+import {AiFillApi, AiFillBug, AiOutlineComment, AiOutlineDeploymentUnit,} from "react-icons/ai";
 import {PiBracketsCurlyDuotone, PiCoffeeFill, PiCompassToolFill} from "react-icons/pi";
 import {GiRainbowStar} from "react-icons/gi";
 import {MdAlternateEmail} from "react-icons/md";
@@ -86,7 +85,7 @@ export const portfolio = {
             {label: 'Enjoy complex strategy games', icon: PiCompassToolFill},
             {label: 'Value inclusive environments', icon: GiRainbowStar},
             {label: 'Appreciate post-ironic humor', icon: AiOutlineComment},
-            {label: 'Bilingual (Ukrainian, Russian) + English & Czech', icon: IoLanguage }
+            {label: 'Bilingual (Ukrainian, Russian) + English & Czech', icon: IoLanguage}
         ]
     }
 };
