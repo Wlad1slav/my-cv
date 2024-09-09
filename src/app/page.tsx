@@ -3,11 +3,24 @@ import {contacts, personal, portfolio, urls} from "@/lib/cv-info";
 import Image from "next/image";
 import {Badge} from "@/components/ui/badge";
 import {BiLogoGithub} from "react-icons/bi";
+import {Metadata} from "next";
+
+export async function generateMetadata(): Promise<Metadata> {
+    return {
+        metadataBase: new URL('https://vladyslavfokin.netlify.app/'),
+        title: personal.name,
+        description: personal.desc,
+        openGraph: {
+            title: personal.name,
+            description: personal.desc,
+            images: personal.photo,
+        },
+    };
+}
 
 export default function Page() {
     return (
         <main>
-
             <section className="py-12 md:py-24 lg:py-32 w-full flex flex-col items-center">
                 <div className="flex flex-col justify-around items-center gap-8 lg:flex-row">
                     <div className="space-y-5 flex flex-col items-center lg:items-start">
