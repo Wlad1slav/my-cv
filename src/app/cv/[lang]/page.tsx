@@ -20,7 +20,6 @@ const CvPage = async ({params}: CvPageProps) => {
     const lang = langParam as TAvailableCvLanguages;
 
     const styles = {
-        primary: 'pink-500',
         heading: "text-2xl border-b-4 mb-2 font-bold uppercase",
         badge: "border border-gray-300 py-0.5 px-1 rounded text-gray-400"
     };
@@ -29,7 +28,7 @@ const CvPage = async ({params}: CvPageProps) => {
         <main className="w-full space-y-3">
             <section className="space-y-1">
                 <h1 className="text-5xl font-bold">{local[lang].name}</h1>
-                <p className={`text-3xl text-${styles.primary}`}>Full stack Developer</p>
+                <p className={`text-3xl text-pink-500`}>Full stack Developer</p>
             </section>
             <section className="flex justify-between gap-5">
                 <Image
@@ -58,7 +57,7 @@ const CvPage = async ({params}: CvPageProps) => {
                 <div>
                     <h2 className={styles.heading}>Experience</h2>
                     <div className="space-y-2.5">
-                        <span className={`text-xl text-${styles.primary}`}>Agile Alpaca Agency</span>
+                        <span className={`text-xl text-pink-500`}>Agile Alpaca Agency</span>
                         <div className="flex items-center gap-4">
                             <span className="flex items-center gap-1">
                                 <Calendar/>
@@ -84,7 +83,7 @@ const CvPage = async ({params}: CvPageProps) => {
                     {Object.values(portfolio).map(skills => (
                         skills.heading !== 'Actually important' &&
                         <div key={skills.heading} className="border-dashed border-b border-gray-400 pb-3">
-                            <h3 className={`text-xl mb-0.5 font-medium text-${styles.primary}`}>{skills.heading}</h3>
+                            <h3 className={`text-xl mb-0.5 font-medium text-pink-500`}>{skills.heading}</h3>
                             <span className="flex items-center gap-2 flex-wrap">
                                 {skills.skills.map(skill => (
                                     <p key={skill.label} className={styles.badge}>{skill.label}</p>
@@ -97,7 +96,7 @@ const CvPage = async ({params}: CvPageProps) => {
                     <h2 className={styles.heading}>Education</h2>
                     <div className="space-y-3.5">
                         <p className="text-2xl">{local[lang].education.degree}</p>
-                        <span className={`text-xl text-${styles.primary}`}>{local[lang].education.university}</span>
+                        <span className={`text-xl text-pink-500`}>{local[lang].education.university}</span>
                         <span className="flex items-center gap-1">
                             <Calendar/>
                             2021 - 2025
