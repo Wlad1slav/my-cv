@@ -21,6 +21,8 @@ import {GiRainbowStar} from "react-icons/gi";
 import {MdAlternateEmail} from "react-icons/md";
 import {IoLanguage, IoLogoSass} from "react-icons/io5";
 import {RiSeoFill} from "react-icons/ri";
+import {https, mailto} from "@/lib/utils";
+import {Github, Mail, Phone} from "lucide-react";
 
 export const personal = {
     name: 'Vladyslav Fokin',
@@ -29,10 +31,15 @@ export const personal = {
 };
 
 export const urls = {
-    telegram: 'https://t.me/vladyslav_fokin',
-    github: 'https://github.com/Wlad1slav',
-    linkedin: 'https://www.linkedin.com/in/vladyslav-fokin-b35950298/',
-}
+    telegram: 't.me/vladyslav_fokin',
+    github: 'github.com/Wlad1slav',
+    linkedin: 'www.linkedin.com/in/vladyslav-fokin-b35950298/',
+};
+
+export const email = 'vlad.fokin2004.vf@gmail.com';
+export const mobile = '+380 96 043 97 48';
+export const birthYear = 2004;
+export const languages = ['uk', 'ru', 'en', 'cz'];
 
 export const portfolio = {
     frontend: {
@@ -95,24 +102,34 @@ export const contacts = [
         label: '@vladyslav_fokin',
         url: urls.telegram,
         icon: BiLogoTelegram,
+        protocol: https
         // color: '#249AD7'
     },
     {
         label: 'Wlad1slav',
         url: urls.github,
         icon: BiLogoGithub,
+        protocol: https
         // color: 'white'
     },
     {
         label: 'Vladyslav Fokin',
         url: urls.linkedin,
         icon: BiLogoLinkedin,
+        protocol: https
         // color: '#0077B5'
     },
     {
         label: 'vlad.fokin2004.vf@gmail.com',
-        url: 'mailto:vlad.fokin2004.vf@gmail.com',
+        url: email,
         icon: MdAlternateEmail,
+        protocol: mailto
         // color: '#FF4737'
     },
 ];
+
+export const cvContacts = [
+    {label: mobile, icon: Phone},
+    {label: urls.github, icon: Github},
+    {label: email, icon: Mail},
+]
