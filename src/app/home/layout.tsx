@@ -5,7 +5,7 @@ import {personal, urls} from "@/lib/cv-info";
 
 export default function HomeLayout({children}: { children: React.ReactNode }) {
     return (
-        <div className="flex flex-col min-h-[100dvh]">
+        <div className="flex flex-col min-h-[100dvh] bg-accent">
             <header className="px-4 lg:px-6 h-14 flex items-center">
                 <nav className="ml-auto flex gap-4 sm:gap-6">
                     <Link href={urls.github} className="text-sm font-medium hover:underline underline-offset-4"

@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
 export default function HomePage() {
     return (
         <main>
-            <section className="py-12 md:py-24 lg:py-32 w-full flex flex-col items-center">
+            <section className="py-12 md:py-24 lg:py-32 w-full flex flex-col items-center bg-accent">
                 <div className="flex flex-col justify-around items-center gap-8 lg:flex-row">
                     <div className="space-y-5 flex flex-col items-center lg:items-start">
                         <h1 className="text-3xl font-bold sm:text-5xl xl:text-6xl/none">{personal.name}</h1>
@@ -30,14 +30,14 @@ export default function HomePage() {
                         <div className="gap-2 flex flex-col sm:flex-row">
                             <Link
                                 href="#skills"
-                                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                                className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-primary-foreground/30 hover:bg-indigo-950"
                                 prefetch={false}
                             >
                                 View Skills
                             </Link>
                             <Link
                                 href="#contact"
-                                className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                                className="inline-flex h-10 items-center justify-center rounded-md bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-950 hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-primary-foreground/15"
                                 prefetch={false}
                             >
                                 Contact Me
@@ -80,7 +80,7 @@ export default function HomePage() {
                 <div className="flex flex-col items-center">
                     <Link
                         href={https(urls.github)}
-                        className="inline-flex gap-1.5 h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
+                        className="inline-flex gap-2 h-10 items-center justify-center rounded-md bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-primary hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50 border border-primary-foreground/15 hover:border-primary-foreground/30"
                         prefetch={false}
                     >
                         <BiLogoGithub size={24}/>
@@ -90,7 +90,7 @@ export default function HomePage() {
             </section>
 
 
-            <section className="py-12 md:py-24 lg:py-32 space-y-5">
+            <section id="contact" className="py-12 md:py-24 lg:py-32 space-y-5 bg-accent">
                 <div className="flex flex-col items-center space-y-2.5">
                     <h2 className="text-center text-3xl font-bold sm:text-5xl">Get in Touch</h2>
                     <p className="max-w-[900px] md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed text-center">

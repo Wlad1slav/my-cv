@@ -41,7 +41,10 @@ const CvPage = async ({params}: CvPageProps) => {
                 <div>
                     <h2 className={styles.heading}>Summary</h2>
                     <p className="text-xl text-gray-400">
-                        {local[lang].summary} {new Date().getFullYear() - birthYear} {local[lang].yo}
+                        {local[lang].summary}
+                    </p>
+                    <p className="text-xl text-gray-400">
+                        {new Date().getFullYear() - birthYear} {local[lang].yo}
                     </p>
                 </div>
             </section>
