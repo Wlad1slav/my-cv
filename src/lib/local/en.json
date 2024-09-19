@@ -1,14 +1,14 @@
 {
   "name": "Vladyslav Fokin",
-  "summary": "Full Stack Developer with 2 years of experience in JavaScript/TypeScript, React.ts, Next.js, and SEO. Initially started as an SEO Specialist before advancing into full stack development.",
+  "summary": "Full Stack Developer with experience in JavaScript/TypeScript, React, Next.js, and SEO. Initially started as an SEO Specialist before advancing into full stack development.",
   "yo": "y.o.",
   "experience": {
     "seo": "Analyzed websites and online stores, optimized content for search engines, developed strategies to boost organic traffic, and monitored SEO metrics for improved visibility.",
-    "developer": "Developed web apps with JavaScript/TypeScript, React.ts, and Next.js. Implemented front-end/back-end features, API integration, and authentication with Firebase/OAuth, leveraging libraries to enhance functionality."
+    "developer": "Developed web applications using JavaScript/TypeScript, React, and Next.js. Implemented front-end and back-end features, API integration, payment and shipping systems, and authentication using Firebase/OAuth."
   },
   "education": {
-    "degree": "BSc of Software Engineering",
-    "university": "Private Higher Educational Institution \"European University\""
+    "degree": "BSc in Software Engineering",
+    "university": "European University, Private Higher Educational Institution"
   },
   "en": "English",
   "uk": "Ukrainian",
